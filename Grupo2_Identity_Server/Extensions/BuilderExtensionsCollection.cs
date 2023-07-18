@@ -28,9 +28,9 @@ namespace Grupo2_Identity_Server.Extensions
                     Description = "Servidor de Identidade do Grupo 2"
                 });
 
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPatch = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPatch);
+                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                //var xmlPatch = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                //c.IncludeXmlComments(xmlPatch);
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
