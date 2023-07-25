@@ -7,8 +7,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.AddApiSwagger();
 builder.AddPersistence();
 builder.Services.AddCors();
-builder.AddIdentity();
-builder.AddToken();
+builder.AddScoped();
 
 var app = builder.Build();
 var environment = app.Environment;
