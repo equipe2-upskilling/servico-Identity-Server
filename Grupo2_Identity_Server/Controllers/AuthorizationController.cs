@@ -22,7 +22,7 @@ namespace Grupo2_Identity_Server.Controllers
             _loginRepository = loginRepository;
         }
 
-        [HttpGet("/register")]
+        [HttpPost("/register")]
         public async Task<ActionResult> RegisterUser([FromBody] LoginDto usuario)
         {
             if (!ModelState.IsValid)
